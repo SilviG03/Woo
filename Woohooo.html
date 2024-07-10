@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 1em;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #hero {
+            background: #666;
+            color: #fff;
+            text-align: center;
+            padding: 5em 2em;
+        }
+
+        #hero .cta-button {
+            background: #ff9800;
+            color: #fff;
+            padding: 0.75em 1.5em;
+            text-decoration: none;
+            border-radius: 0.5em;
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 1em;
+        }
+
+        .service, .testimonial, .blog-post {
+            margin-bottom: 1.5em;
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact form label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 0.75em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 0.25em;
+        }
+
+        #contact form button {
+            background: #333;
+            color: #fff;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 0.25em;
+            margin-top: 1em;
+        }
+
+        #contact .social-media a {
+            margin: 0 0.5em;
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+
+        footer .footer-links a, footer .footer-info a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5em;
+        }
+
+        footer .footer-info p {
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Tech Solutions</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Innovative Tech Solutions for Your Business</h1>
+            <p>Empowering your business with cutting-edge technology and exceptional service.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Tech Solutions is a leading provider of technology services and solutions. We are committed to delivering innovative and customized solutions to help businesses achieve their goals.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Creating responsive, user-friendly websites tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h3>IT Consulting</h3>
+            <p>Providing expert advice and strategies to optimize your IT infrastructure.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Solutions</h3>
+            <p>Leveraging cloud technology to enhance efficiency and scalability.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <blockquote>Tech Solutions transformed our online presence. Highly recommend!</blockquote>
+            <p>John Doe, CEO of ABC Corp.</p>
+        </div>
+        <div class="testimonial">
+            <blockquote>Their IT consulting services are top-notch.</blockquote>
+            <p>Jane Smith, CTO of XYZ Ltd.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Insights</h2>
+        <article class="blog-post">
+            <h3>The Future of Web Development</h3>
+            <p>Explore the latest trends and technologies in web development.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h3>Maximizing Efficiency with Cloud Solutions</h3>
+            <p>Learn how cloud technology can boost your business operations.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you. Fill out the form below or reach us at <a href="mailto:contact@techsolutions.com">contact@techsolutions.com</a>.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-media">
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="footer-info">
+            <a href="#">Privacy Policy</a>
+            <p>Email: <a href="mailto:contact@techsolutions.com">contact@techsolutions.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>© 2024 Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
